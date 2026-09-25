@@ -18,23 +18,23 @@
                 
                     <label for="userName">Nome de usuário</label>
                     <input type="text" name="userName" id="userName" required>
-                
-                
+                    <br>
+
                     <label for="age">Idade:</label>
                     <input type="number" name="age" id="age" min="12" max="100">
-                
+                    <br>
                 
                     <label for="birthDate">Data de nascimento:</label>
                     <input type="date" name="birthDate" id="birthDate" required>
-                
+                    <br>       
                 
                     <label for="userEmail">Email</label>
                     <input type="email" name="userEmail" id="userEmail">
-
+                    <br>
                 
                     <label for="userPhoneNumber">Telefone:</label>
                     <input type="tel" name="userPhoneNumber" id="userPhoneNumber" pattern="[0-9]{11}">
-
+                    <br>
                 
                     <label for="userImage">Upload de foto:</label>
                     <input type="file" accept="image/*" name="userImage" id="userImage" required>
@@ -52,8 +52,8 @@
                     
                     <input type="radio" name="userGender" id="" value="naoInformado" >
                     <label for="userGender">Prefiro não informar</label>
+                    <br>
 
-                
                     <label for="maritalStatus">Estado Civil</label>
 
                     <select name="maritalStatus" id="maritalStatus">
@@ -64,7 +64,7 @@
                         <option value="solteiro">Solteiro</option>
                     </select>
 
-                
+                    <br>
                     <label for="userFederativeUnit">Unidade Federativa (Estado):</label>
                     <select name="userFederativeUnit" id="userFederativeUnit" required>
                         <option value="acre">Acre</option>
@@ -96,9 +96,26 @@
                         <option value="tocantins">Tocantins</option>
                     </select>
 
-                
+                    <br>
                     <label for="userCity">Cidade:</label>
                     <input type="text" name="userCity" id="userCity">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Hábitos</legend>
+
+                    <p>Redes Sociais</p>
+                    <input type="checkbox" name="social" value="facebook">
+                    <label for="facebook">Facebook</label>
+
+                    <input type="checkbox" name="social" value="linkedin">
+                    <label for="linkedin">LinkedIn</label>
+
+                    <input type="checkbox" name="social" value="instagram">
+                    <label for="instagram">Instagram</label>
+
+                    <input type="checkbox" name="social" value="x">
+                    <label for="x">X</label>
                 </fieldset>
 
                 <button type="submit">Submeter-se</button>
