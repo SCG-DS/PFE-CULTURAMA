@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Culturama</title>
+</head>
+<body>
+    <header>
+        <h1>Pesquisa online</h1>
+    </header>
+
+    <section>
+        <main>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <div class="input-group">
+                        <label for="userName">Nome de usuário</label>
+                        <input type="text" name="userName" id="userName" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="age">Idade:</label>
+                        <input type="number" name="age" id="age" min="12" max="100">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="birthDate">Data de nascimento:</label>
+                        <input type="date" name="birthDate" id="birthDate" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="userEmail">Email</label>
+                        <input type="email" name="userEmail" id="userEmail">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="userPhoneNumber">Telefone:</label>
+                        <input type="tel" name="userPhoneNumber" id="userPhoneNumber" pattern="[0-9]{11}">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="userImage">Upload de foto:</label>
+                        <input type="file" accept="image/*" name="userImage" id="userImage" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Perfil</legend>
+                    
+                    <div class="input-group">
+                        <p>Gênero</p>    
+                        
+                        <input type="radio" name="userGender" id="" value="masculino" >
+                        <label for="userGender">Masculino</label>
+                        
+                        <input type="radio" name="userGender" id="" value="feminino" >
+                        <label for="userGender">Feminino</label>
+                        
+                        <input type="radio" name="userGender" id="" value="naoInformado" >
+                        <label for="userGender">Prefiro não informar</label>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="maritalStatus">Estado Civil</label>
+
+                        <select name="maritalStatus" id="maritalStatus">
+                            <option value="naoInformado" hidden selected>Não informado</option>
+                            <option value="casado">Casado</option>
+                            <option value="divorciado">Divorciado</option>
+                            <option value="uniaoEstavel">União Estável</option>
+                            <option value="solteiro">Solteiro</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="userFederativeUnit">Unidade Federativa (Estado):</label>
+                        <select name="userFederativeUnit" id="userFederativeUnit" required>
+                            <option value="acre">Acre</option>
+                            <option value="alagoas">Alagoas</option>
+                            <option value="amapa">Amapá</option>
+                            <option value="amazonas">Amazonas</option>
+                            <option value="bahia">Bahia</option>
+                            <option value="ceara">Ceará</option>
+                            <option value="distritoFederal">Distrito Federal</option>
+                            <option value="espiritoSanto">Espirito Santo</option>
+                            <option value="goias">Goiás</option>
+                            <option value="maranhao">Maranhão</option>
+                            <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
+                            <option value="matoGrosso">Mato Grosso</option>
+                            <option value="minasGerais">Minas Gerais</option>
+                            <option value="para">Pará</option>
+                            <option value="paraiba">Paraíba</option>
+                            <option value="parana">Paraná</option>
+                            <option value="pernambuco">Pernambuco</option>
+                            <option value="piaui">Piauí</option>
+                            <option value="riodeJaneiro">Rio de Janeiro</option>
+                            <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
+                            <option value="rioGrandeDoSul">Rio Grande do Sul</option>
+                            <option value="rondonia">Rondônia</option>
+                            <option value="roraima">Roraima</option>
+                            <option value="santaCatarina">Santa Catarina</option>
+                            <option value="saoPaulo">São Paulo</option>
+                            <option value="sergipe">Sergipe</option>
+                            <option value="tocantins">Tocantins</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="userCity">Cidade:</label>
+                        <input type="text" name="userCity" id="userCity">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="userPhoneNumber">Telefone:</label>
+                        <input type="tel" name="userPhoneNumber" id="userPhoneNumber" pattern="[0-9]{11}">
+                    </div>
+                </fieldset>
+
+                <button type="submit">Submeter-se</button>
+            </form>
+        </main>
+    </section>
+</body>
+</html>
